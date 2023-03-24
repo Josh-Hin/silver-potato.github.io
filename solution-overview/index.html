@@ -140,11 +140,12 @@ Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  </p>
 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
 <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  </p>
-<pre><code class="language-mermaid">graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
+<pre><code class="language-mermaid">flowchart LR
+    A[Start] --&gt; B{Is it?}
+    B --&gt;|Yes| C[OK]
+    C --&gt; D[Rethink]
+    D --&gt; B
+    B ----&gt;|No| E[End]
 </code></pre></div>
                 </div>
             
