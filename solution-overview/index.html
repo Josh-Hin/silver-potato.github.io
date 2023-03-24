@@ -140,17 +140,24 @@ Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  </p>
 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
 <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  </p>
+
+
 <div class="mermaid">
-    flowchart LR
-    A[Start] --> B{Is it?}
-    B -->|Yes| C[OK]
-    C -->; D[Rethink]
-    D --> B
-    B ---->|No| E[End]
-</div></div>
+    graph TD  
+    A[Start] --> C{Answer Question?}  
+    C -->|Yes| D[Do Something]  
+    C -->|No| E[Do Something] 
+</div>
+
+
+
+</div>
 <script src="../js/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
-                </div>
+                
+
+
+</div>
             
         </div>
 
